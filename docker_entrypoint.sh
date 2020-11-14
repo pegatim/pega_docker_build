@@ -8,6 +8,8 @@ echo " |_|   \___|\__, |\__,_| |____/ \___/ \___|_|\_\___|_|   ";
 echo "            |___/                              v${PEGA_DOCKER_VERSION}";
 echo " ";
 
+echo "WHOAMI: `whoami`"
+
 #set -x
 
 # the node_type needs to be defined for various checks below otherwise we
