@@ -6,9 +6,9 @@ echo " | |_) / _ \/ _\` |/ _\` | | | | |/ _ \ / __| |/ / _ \ '__|";
 echo " |  __/  __/ (_| | (_| | | |_| | (_) | (__|   <  __/ |   ";
 echo " |_|   \___|\__, |\__,_| |____/ \___/ \___|_|\_\___|_|   ";
 echo "            |___/                              v${PEGA_DOCKER_VERSION}";
-echo " ";
+echo " **** ";
 
-echo "WHOAMI: `whoami`"
+echo "WHOAMI: `whoami`";
 
 #set -x
 
