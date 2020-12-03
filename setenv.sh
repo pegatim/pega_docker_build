@@ -63,5 +63,9 @@ if [ "${IS_STREAM_NODE}" = "true" ]; then
   CATALINA_OPTS="${CATALINA_OPTS} -Dprconfig/dsm/services/stream/server_properties/unclean.leader.election.enable=false "
 fi
 
+# Secrets 
+CATALINA_OPTS="${CATALINA_OPTS} -DdbUsername=${DB_USERNAME}"
+CATALINA_OPTS="${CATALINA_OPTS} -DdbPassword=${DB_PASSWORD}"
+
 echo CATALINA_OPTS: \"${CATALINA_OPTS}\"
 
