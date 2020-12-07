@@ -207,6 +207,8 @@ unset SECRET_DB_USERNAME SECRET_DB_PASSWORD CASSANDRA_USERNAME CASSANDRA_PASSWOR
 
 unset pega_root lib_root config_root
 
+openssl pkcs12 -export -in /opt/bofa/secrets/server.pem -inkey /opt/bofa/secrets/server.key -out /usr/local/tomcat/.keystore.p12 -name tomcat -CAfile /opt/bofa/secrets/cacert.pem -caname root -chain -password pass:${KEYSTORE_PW}
+
 # Run tomcat if the first argument is run otherwise try to run whatever the argument is a command
 if [ "$1" = 'run' ]; then
   exec catalina.sh "$@"

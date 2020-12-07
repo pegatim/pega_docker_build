@@ -72,7 +72,7 @@
     <Connector port="8080" maxThreads="200"
            protocol="org.apache.coyote.http11.Http11NioProtocol"
            scheme="https" secure="true" SSLEnabled="true"
-           keystoreFile="${catalina.base}/.keystore.p12" keystorePass="changeit"
+           keystoreFile="${catalina.base}/.keystore.p12" keystorePass="${keystorePw}"
            clientAuth="false" sslProtocol="TLS"/>
 
     <!-- A "Connector" using the shared thread pool-->
